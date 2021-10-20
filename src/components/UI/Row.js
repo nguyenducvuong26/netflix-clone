@@ -79,8 +79,8 @@ function Row({ title, fetchUrl, isLargeRow, mediaType }) {
                             className={classes.image}
                             src={`${baseUrl}${
                                 isLargeRow
-                                    ? movie.poster_path
-                                    : movie.backdrop_path
+                                    ? movie?.poster_path
+                                    : movie?.backdrop_path
                             }`}
                             alt={movie.name}
                         />
