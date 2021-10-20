@@ -3,7 +3,7 @@ import classes from "./Movie.module.css";
 import Grid from "@mui/material/Grid";
 import { DetailsContext } from "../../store/details";
 
-const baseUrl = "http://image.tmdb.org/t/p/original";
+const baseUrl = "https://image.tmdb.org/t/p/original";
 
 function Movie({ movie }) {
     const { showDetailsHandler } = useContext(DetailsContext);

@@ -43,7 +43,7 @@ export const Modal = () => {
             <div
                 className={classes.banner}
                 style={{
-                    backgroundImage: `url("http://image.tmdb.org/t/p/original/${movieDetails?.backdrop_path}")`,
+                    backgroundImage: `url("https://image.tmdb.org/t/p/original/${movieDetails?.backdrop_path}")`,
                 }}
             >
                 <div className={classes.close} onClick={closeDetailsHandler}>

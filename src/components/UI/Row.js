@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import { DetailsContext } from "../../store/details";
 
-const baseUrl = "http://image.tmdb.org/t/p/original";
+const baseUrl = "https://image.tmdb.org/t/p/original";
 
 SwiperCore.use([Navigation]);
 
