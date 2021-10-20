@@ -12,7 +12,7 @@ function Movie({ movie }) {
             <img
                 onClick={() => showDetailsHandler(movie.id, movie.media_type)}
                 className={classes.img}
-                src={`${baseUrl}${movie.backdrop_path}`}
+                src={`${baseUrl}${movie?.backdrop_path}`}
                 alt={movie.name}
             />
         </Grid>
