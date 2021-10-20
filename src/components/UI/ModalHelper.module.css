@@ -1,0 +1,43 @@
+.appear {
+    transition: all linear 0.5s;
+    animation: appearLinear 0.5s linear forwards;
+}
+
+.disappear {
+    transition: all linear 0.5s;
+    animation: disappearLinear 0.5s linear forwards;
+}
+
+@keyframes appearLinear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes disappearLinear {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

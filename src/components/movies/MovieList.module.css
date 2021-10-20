@@ -1,0 +1,10 @@
+.results {
+    height: 100vh;
+    padding: 80px 48px 250px;
+}
+
+@media (max-width: 767px) {
+    .results {
+        padding: 30px 16px 150px;
+    }
+}

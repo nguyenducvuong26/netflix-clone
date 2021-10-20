@@ -1,0 +1,214 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: fixed;
+    top: 5vh;
+    margin: auto;
+    width: 100%;
+    max-width: 864px;
+    max-height: 700px;
+    z-index: 9999;
+}
+
+.overflowYScroll {
+    overflow-y: scroll;
+}
+
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 480px;
+    position: relative;
+    transition: all linear 1s;
+    animation: appearSmoothly 1s ease forwards;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 4rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ddd;
+}
+
+@keyframes appearSmoothly {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.banner-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(20, 20, 20, 1));
+}
+
+.banner-infor {
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+}
+
+.banner-infor h2 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    margin: 0;
+    margin-bottom: 24px;
+    color: #e5e5d8;
+}
+
+.actions {
+    display: flex;
+}
+
+.actions button {
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.actions button span {
+    margin-left: 12px;
+}
+
+.actions > span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: #e5e5d8;
+    border: 1px solid #e5e5d8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.actions > span:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.information {
+    display: flex;
+    padding: 12px 48px 40px;
+    background-color: #141414;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.information > div:first-child {
+    flex: 2 1 0%;
+}
+
+.information > div:last-child {
+    margin-left: 32px;
+    flex: 1 1 0%;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #f59e0b;
+}
+
+.rate span:last-child {
+    margin-left: 8px;
+    color: #e5e5d8;
+}
+
+.description,
+.genres,
+.companies,
+.countries {
+    color: #e5e5d8;
+}
+
+.genres,
+.companies,
+.countries {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.genres span:first-child,
+.companies span:first-child,
+.countries span:first-child {
+    color: #9ca3af;
+}
+
+.genres span:last-child,
+.companies span:last-child,
+.countries span:last-child {
+    margin-left: 8px;
+}
+
+.description {
+    margin-top: 16px;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 1024px) {
+    .modal {
+        max-height: 800px;
+        top: 15vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        top: 0;
+        height: 100vh;
+        background-color: #141414;
+        overflow-y: scroll;
+    }
+
+    .banner {
+        border-radius: 0;
+    }
+
+    .banner-infor {
+        left: 16px;
+    }
+
+    .information {
+        padding: 0 16px;
+        flex-direction: column;
+    }
+
+    .information > div:last-child {
+        margin: 0;
+    }
+}
