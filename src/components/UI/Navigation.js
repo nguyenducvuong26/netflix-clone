@@ -28,7 +28,6 @@ function Navigation() {
         if (searchValue === "") {
             return;
         }
-        console.log(searchValue);
         history.push(`/search?q=${searchValue}`);
     };
 
