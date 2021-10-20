@@ -16,6 +16,7 @@ function MovieList() {
             const response = await axios.get(
                 `https://api.themoviedb.org/3/search/multi?query=${query}&api_key=74f029883a68ba2ef798a64bd3e1c849&include_adult=true&vote_count.gte=5`
             );
+            console.log(response);
             setMovies(response.data.results);
         }
         getMovies();
@@ -24,7 +25,7 @@ function MovieList() {
     return (
         <div className={classes.results}>
             <Box sx={{ width: "100%" }}>
-                <Grid fluid container rowSpacing={6} columnSpacing={1}>
+                <Grid container rowSpacing={6} columnSpacing={1}>
                     {movies.map((movie) => (
                         <Movie key={movie.id} movie={movie} />
                     ))}

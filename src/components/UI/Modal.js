@@ -33,7 +33,6 @@ export const Modal = () => {
 
     useEffect(() => {
         const modal = document.querySelector(`.${classes.modal}`);
-        console.dir(modal);
         if (modal.scrollHeight > 700) {
             modal.classList.add(classes.overflowYScroll);
         }
