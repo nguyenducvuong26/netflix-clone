@@ -20,6 +20,7 @@ function App() {
                     </Route>
                 </Switch>
             </main>
+            <div className="footer" />
         </div>
     );
 }

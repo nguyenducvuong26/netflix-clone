@@ -1,6 +1,6 @@
 .results {
-    min-height: 100vh;
-    padding: 80px 48px 250px;
+    height: 100%;
+    padding: 80px 48px 50px;
 }
 
 @media (max-width: 767px) {
