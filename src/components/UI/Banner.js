@@ -4,6 +4,7 @@ import requests from "../../apis/requests";
 import classes from "./Banner.module.css";
 
 function Banner() {
+    s;
     const [movie, setMovie] = useState(null);
 
     useEffect(() => {
@@ -11,7 +12,7 @@ function Banner() {
             const movies = await axios.get(requests[1].fetchUrl);
             setMovie(
                 movies.data?.results[
-                    Math.floor(Math.random() * movies?.data.results.length - 1)
+                    Math.floor(Math.random() * movies?.data.results.length)
                 ]
             );
         }
